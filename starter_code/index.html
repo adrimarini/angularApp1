@@ -14,14 +14,16 @@
 		</section>
 
 		<section ng-controller= "AnimalController as animalCtrl">
-			{{ animalCtrl.zooName }}
-			<h1> REPTILES CURRENTLY AT THE ZOO: </h1>
+			<h1>{{ animalCtrl.zooName }}</h1>
+			<h3> REPTILES CURRENTLY AT THE ZOO: </h3>
 				<div ng-repeat="reptile in animalCtrl.reptiles">
-					<li>{{ reptile.type }} - {{ reptile.name }} - {{ reptile.age }}</li>
+					<li>{{ reptile.type | uppercase }} - {{ reptile.name }} - {{ reptile.age }}</li>
+					<img ng-src="{{reptile.photo}}" height="90" width="90">
 				</div>
-			<h1> MAMALS CURRENTLY AT THE ZOO: </h1>
+			<h3> MAMALS CURRENTLY AT THE ZOO: </h3>
 				<div ng-repeat="mamal in animalCtrl.mamals">
-						<li>{{ mamal.type }} - {{ mamal.name }} - {{ mamal.age }} </li>
+						<li>{{ mamal.type | uppercase }} - {{ mamal.name }} - {{ mamal.age }} </li>
+						<img ng-src="{{ mamal.photo }}" height='90' width='90'>
 				</div>
 		</section>
 	</body>

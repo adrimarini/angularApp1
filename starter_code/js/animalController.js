@@ -9,35 +9,41 @@ angular.module('IntroToAngularApp')
         {
           type: "snake",
           name: "Henry",
-          age: 2
+          age: 2,
+          photo: 'http://www.newdesignfile.com/postpic/2010/08/green-snake-cartoon_352065.jpg'
         },
         {
           type: "lizard",
           name: "Sal",
-          age: 3
+          age: 3,
+          photo: 'https://i.pinimg.com/originals/f3/5c/de/f35cdeaf6651c6cb242b2fbc8ac89f0b.jpg'
         },
         {
           type: "croc",
           name: "Amy",
-          age: 6
+          age: 6,
+          photo: 'https://i.pinimg.com/originals/2c/c3/29/2cc329be86b3c56b45f8af4b8ffd8470.jpg'
         }
       ];
     self.mamals = [
       {
         type: "bunny",
         name: "Mr. floofer",
-        age: 5
+        age: 5,
+        photo: 'https://i.pinimg.com/originals/bd/2e/e9/bd2ee9e08816a9a0801f056597230fac.png'
       },
       {
         type: "giraffe",
         name: "Sheldon",
-        age: 4
+        age: 4,
+        photo: 'https://previews.123rf.com/images/tigatelu/tigatelu1302/tigatelu130200011/18047043-Cute-giraffe-cartoon-Stock-Vector-drawing.jpg'
 
       },
       {
         type: "elephant",
         name: "Tess",
-        age: 15
+        age: 15,
+        photo: 'http://elephant-pictures.clipartonline.net/_/rsrc/1379429378550/baby-elephant-dark-blue/Cartoon_Elephant_2.png.1379429378324.png?height=320&width=320'
       }
     ];
 
