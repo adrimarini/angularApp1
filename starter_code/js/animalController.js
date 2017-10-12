@@ -4,6 +4,7 @@ angular.module('IntroToAngularApp')
     function AnimalController() {
       var self = this
       self.awesome = true
+      self.zooName = "San Francisco Zoo"
       self.reptiles = [
         {
           type: "snake",
