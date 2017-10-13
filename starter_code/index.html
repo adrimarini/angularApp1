@@ -19,7 +19,7 @@
 				<div ng-repeat="reptile in animalCtrl.reptiles">
 					<li>{{ reptile.type | uppercase }} - {{ reptile.name }} - {{ reptile.age }}</li>
 					<img ng-src="{{reptile.photo}}" height="90" width="90">
-					<button class="likes" ng-click="animalCtrl.plusOne()">+{{ reptile.likes }}</button>
+					<button class="likes" ng-click="animalCtrl.plusOne($index)">+{{ reptile.likes }}</button>
 					<button>-</button>
 				</div>
 			<h3> MAMALS CURRENTLY AT THE ZOO: </h3>

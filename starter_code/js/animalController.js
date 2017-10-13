@@ -60,6 +60,7 @@ angular.module('IntroToAngularApp')
     ];
 
     self.plusOne = function(index) {
-      self.reptiles[0].likes++;
+        self.reptiles[index].likes++;
+
     };
 }
