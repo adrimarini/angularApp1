@@ -1,0 +1,13 @@
+.likes {
+  border-radius: 50%;
+  background-color: cyan;
+  border: none;
+  height: 25px;
+}
+
+.dislikes {
+  border-radius: 50%;
+  background-color: #879292;
+  border: none;
+  height: 25px;
+}
