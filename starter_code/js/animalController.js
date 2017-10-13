@@ -59,11 +59,19 @@ angular.module('IntroToAngularApp')
       }
     ];
 
-    self.plusOne = function(index) {
+    self.plusOneReptile = function(index) {
         self.reptiles[index].likes++;
     };
 
-    self.minusOne = function(index) {
+    self.minusOneReptile = function(index) {
       self.reptiles[index].dislikes++;
+    };
+
+    self.plusOneMamal = function(index) {
+      self.mamals[index].likes++;
+    };
+
+    self.minusOneMamal = function(index) {
+      self.mamals[index].dislikes++;
     };
 }

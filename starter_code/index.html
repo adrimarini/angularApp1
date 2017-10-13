@@ -19,13 +19,15 @@
 				<div ng-repeat="reptile in animalCtrl.reptiles">
 					<li>{{ reptile.type | uppercase }} - {{ reptile.name }} - {{ reptile.age }}</li>
 					<img ng-src="{{reptile.photo}}" height="90" width="90">
-					<button class="likes" ng-click="animalCtrl.plusOne($index)">+{{ reptile.likes }}</button>
-					<button class="dislikes" ng-click="animalCtrl.minusOne($index)">-{{ reptile.dislikes }}</button>
+					<button class="likes" ng-click="animalCtrl.plusOneReptile($index)">+{{ reptile.likes }}</button>
+					<button class="dislikes" ng-click="animalCtrl.minusOneReptile($index)">-{{ reptile.dislikes }}</button>
 				</div>
 			<h3> MAMALS CURRENTLY AT THE ZOO: </h3>
 				<div ng-repeat="mamal in animalCtrl.mamals">
 						<li>{{ mamal.type | uppercase }} - {{ mamal.name }} - {{ mamal.age }} </li>
 						<img ng-src="{{ mamal.photo }}" height='90' width='90'>
+						<button class="likes" ng-click="animalCtrl.plusOneMamal($index)">+{{ mamal.likes }}</button>
+						<button class="dislikes" ng-click="animalCtrl.minusOneMamal($index)">-{{ mamal.dislikes }}</button>
 				</div>
 		</section>
 	</body>
