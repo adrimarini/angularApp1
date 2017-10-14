@@ -74,4 +74,31 @@ angular.module('IntroToAngularApp')
     self.minusOneMamal = function(index) {
       self.mamals[index].dislikes++;
     };
+
+    self.zooComments = [
+      {
+        userName: 'animalLvr1',
+        comment: 'The bunny is so cute!'
+      },
+      {
+        userName: 'crocoMan',
+        comment: 'The crocs need more space to roam'
+      }
+    ];
+
+    self.newComment = {
+      userName: "",
+      comment: ""
+    };
+
+    self.addZooComment = function() {
+      self.zooComments.push({
+        userName: self.newComment.userName,
+        comment: self.newComment.comment
+      });
+      self.newComment.userName = '';
+      self.newComment.comment = '';
+    }
+
+//end of AnimalController function
 }

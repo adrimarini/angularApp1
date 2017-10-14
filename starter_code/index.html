@@ -30,6 +30,16 @@
 						<button class="likes" ng-click="animalCtrl.plusOneMamal($index)">+{{ mamal.likes }}</button>
 						<button class="dislikes" ng-click="animalCtrl.minusOneMamal($index)">-{{ mamal.dislikes }}</button>
 				</div>
+				<br><br>
+				<div ng-repeat=" comment in animalCtrl.zooComments">
+					----------------------------
+					<li> {{ comment.userName }} <br> "{{ comment.comment }}" </li>
+				</div>
+				<form ng-submit="animalCtrl.addZooComment()">
+					<!-- <input ng-model="animalCtrl.newComment.userName" placeholder="user name"></input> -->
+					<input ng-model="animalCtrl.newComment.comment" placeholder="comment here"></input>
+				</form>
+
 		</section>
 	</body>
 </html>
